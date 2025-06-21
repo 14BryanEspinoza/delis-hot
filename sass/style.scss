@@ -1,6 +1,8 @@
 // Imports
 @import "navbar";
 @import "carousel";
+@import "menu";
+@import "pedido";
 @import "footer";
 
 // Reset
@@ -23,4 +25,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #eeeeee;
+}
+
+input[type="checkbox"] {
+  display: none;
 }

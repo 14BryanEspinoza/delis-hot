@@ -1,6 +1,5 @@
 .contact {
   text-align: center;
-  font-size: 16px;
   padding: 1rem;
   background-color: #141414;
 
@@ -57,6 +56,136 @@
           color: inherit;
         }
       }
+    }
+  }
+}
+
+// Mobile M
+@media screen and (min-width: 375px) {
+  .contact {
+    padding: 1.5rem;
+
+    &__mailto {
+      padding: 1.5rem 1rem;
+
+      h2 {
+        font-size: calc(1.2rem + 0.5vw);
+      }
+
+      p {
+        font-size: calc(0.9rem + 0.5vw);
+      }
+
+      a {
+        font-size: calc(0.9rem + 0.5vw);
+      }
+    }
+
+    &__info {
+      p {
+        font-size: calc(0.9rem + 0.5vw);
+
+        &:first-child {
+          font-size: calc(1rem + 0.5vw);
+        }
+      }
+
+      ul {
+        li {
+          a {
+            font-size: calc(1.2rem + 0.5vw);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile L
+@media screen and (min-width: 425px) {
+  .contact {
+    &__mailto {
+      padding: 2rem 1rem;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) {
+  .contact {
+    &__mailto {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: calc(100% - 2rem);
+      padding: 1rem;
+      margin: 0 auto;
+      gap: 1rem;
+
+      p {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+}
+
+// Laptop
+@media screen and (min-width: 1024px) {
+  .contact {
+    &__mailto {
+      max-width: calc(80% - 2rem);
+      padding: 1.5rem 1rem;
+      gap: 1rem;
+
+      p {
+        width: calc(50% - 1rem);
+      }
+
+      a {
+        transition: all 0.3s linear;
+
+        &:hover {
+          background-color: #141414;
+          color: #eeeeee;
+        }
+      }
+    }
+
+    &__info {
+      ul {
+        li {
+          a {
+            font-size: calc(1.2rem + 0.5vw);
+            transition: all 0.3s linear;
+
+            &:hover {
+              color: #aaa;
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Laptop L
+@media screen and (min-width: 1440px) {
+  .contact {
+    &__mailto {
+      max-width: calc(75% - 2rem);
+    }
+  }
+}
+
+// 4k
+@media screen and (min-width: 2560px) {
+  .contact {
+    &__mailto {
+      max-width: calc(70% - 2rem);
+      height: 180px;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
     }
   }
 }
