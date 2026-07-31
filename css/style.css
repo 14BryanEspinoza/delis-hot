@@ -37,10 +37,14 @@
 }
 .header .navbar .navbar-nav .nav-link {
   text-align: center;
-  transition: background-color 1s ease, box-shadow 1s ease;
+  transition:
+    background-color 1s ease,
+    box-shadow 1s ease;
   color: #000;
 }
-.header .navbar .navbar-nav .nav-link:hover, .header .navbar .navbar-nav .nav-link:focus, .header .navbar .navbar-nav .nav-link:active {
+.header .navbar .navbar-nav .nav-link:hover,
+.header .navbar .navbar-nav .nav-link:focus,
+.header .navbar .navbar-nav .nav-link:active {
   font-weight: bold;
   background-color: #ffffff;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
@@ -93,7 +97,9 @@
   .header .navbar-collapse .navbar-nav .nav-link {
     font-size: 1rem;
   }
-  .header .navbar-collapse .navbar-nav .nav-link:hover, .header .navbar-collapse .navbar-nav .nav-link:focus, .header .navbar-collapse .navbar-nav .nav-link:active {
+  .header .navbar-collapse .navbar-nav .nav-link:hover,
+  .header .navbar-collapse .navbar-nav .nav-link:focus,
+  .header .navbar-collapse .navbar-nav .nav-link:active {
     text-decoration: underline;
     color: #393636;
     font-weight: normal;
@@ -673,13 +679,15 @@ html {
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #eeeeee;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 

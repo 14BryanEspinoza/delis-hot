@@ -1,0 +1,12 @@
+node_modules/
+.git/
+.github/
+dist/
+*.map
+*.lock
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.ico
