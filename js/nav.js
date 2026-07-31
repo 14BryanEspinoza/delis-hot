@@ -3,8 +3,11 @@ export function initNavbar() {
   const list = document.querySelector(".navbar__list");
 
   if (!toggle || !list) {
-    return;
+    return () => {};
   }
+
+  const controller = new AbortController();
+  const { signal } = controller;
 
   const isOpen = () => list.classList.contains("is-open");
 
@@ -17,17 +20,27 @@ export function initNavbar() {
     );
   };
 
-  toggle.addEventListener("click", () => setOpen(!isOpen()));
+  toggle.addEventListener("click", () => setOpen(!isOpen()), { signal });
 
-  list.addEventListener("click", (event) => {
-    if (event.target.closest(".navbar__link")) {
-      setOpen(false);
-    }
-  });
+  list.addEventListener(
+    "click",
+    (event) => {
+      if (event.target.closest(".navbar__link")) {
+        setOpen(false);
+      }
+    },
+    { signal },
+  );
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && isOpen()) {
-      setOpen(false);
-    }
-  });
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape" && isOpen()) {
+        setOpen(false);
+      }
+    },
+    { signal },
+  );
+
+  return () => controller.abort();
 }

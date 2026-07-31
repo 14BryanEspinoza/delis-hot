@@ -10,4 +10,5 @@ pnpm-lock.yaml
 *.jpg
 *.jpeg
 *.webp
+*.avif
 *.ico
