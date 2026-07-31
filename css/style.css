@@ -1,4 +1,4 @@
-@layer reset, base, components, utilities;
+@layer reset, base, layout, components, utilities;
 
 /* =========================================================
    Design Tokens
@@ -129,6 +129,54 @@
 }
 
 /* =========================================================
+   Layout
+   ========================================================= */
+@layer layout {
+  /* ---------- Hero ---------- */
+  .hero {
+    text-align: center;
+    margin-block-start: 1.875rem;
+  }
+
+  .hero__header {
+    margin-inline: auto;
+  }
+
+  .hero__title {
+    font-size: clamp(1.5rem, 1rem + 3.5vw, 2rem);
+  }
+
+  /* ---------- Menu ---------- */
+  .menu {
+    padding-block: var(--space-12);
+    padding-inline: var(--space-4);
+    scroll-margin-top: var(--space-8);
+  }
+
+  .menu__header {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .menu__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+  }
+
+  /* ---------- Pedido ---------- */
+  .pedido {
+    text-align: center;
+    padding: var(--space-4);
+  }
+
+  .pedido__title {
+    font-size: 1.5rem;
+    margin-block-end: var(--space-6);
+  }
+}
+
+/* =========================================================
    Components
    ========================================================= */
 @layer components {
@@ -212,20 +260,6 @@
     }
   }
 
-  /* ---------- Hero ---------- */
-  .hero {
-    text-align: center;
-    margin-block-start: 1.875rem;
-  }
-
-  .hero__header {
-    margin-inline: auto;
-  }
-
-  .hero__title {
-    font-size: clamp(1.5rem, 1rem + 3.5vw, 2rem);
-  }
-
   /* ---------- Carousel ---------- */
   .carousel {
     width: clamp(200px, 100%, 300px);
@@ -275,24 +309,7 @@
     background-color: var(--color-dark);
   }
 
-  /* ---------- Menu ---------- */
-  .menu {
-    padding-block: var(--space-12);
-    padding-inline: var(--space-4);
-    scroll-margin-top: var(--space-8);
-  }
-
-  .menu__header {
-    text-align: center;
-    margin-inline: auto;
-  }
-
-  .menu__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-inline: auto;
-  }
-
+  /* ---------- Menu cards ---------- */
   .menu__card {
     display: flex;
     align-items: center;
@@ -412,16 +429,6 @@
   }
 
   /* ---------- Pedido ---------- */
-  .pedido {
-    text-align: center;
-    padding: var(--space-4);
-  }
-
-  .pedido__title {
-    font-size: 1.5rem;
-    margin-block-end: var(--space-6);
-  }
-
   .pedido__fieldset {
     text-align: start;
     margin: var(--space-4) auto;
@@ -491,6 +498,34 @@
 
   .pedido__success[hidden] {
     display: none;
+  }
+
+  /* ---------- Not found ---------- */
+  .not-found {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: var(--space-4);
+    min-height: 60vh;
+    padding: var(--space-4);
+    text-align: center;
+  }
+
+  .not-found__code {
+    font-size: clamp(3rem, 2rem + 6vw, 5rem);
+  }
+
+  .not-found__text {
+    color: var(--color-text-secondary);
+  }
+
+  .not-found__link {
+    padding: var(--space-2) var(--space-6);
+    border-radius: var(--radius-lg);
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-card);
   }
 
   /* ---------- Contact ---------- */
