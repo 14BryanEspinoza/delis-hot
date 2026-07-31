@@ -15,6 +15,7 @@
   --color-input-bg: #f9f9f9;
   --color-focus: #007bff;
   --color-danger: #dc3545;
+  --color-success: #198754;
   --color-link-hover: #aaaaaa;
 
   /* Tipografía */
@@ -476,6 +477,20 @@
     background-color: var(--color-surface);
     box-shadow: var(--shadow-inset-lg);
     cursor: pointer;
+  }
+
+  .pedido__success {
+    margin-block-start: var(--space-4);
+    padding: var(--space-4);
+    border: 1px solid var(--color-success);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    color: var(--color-success);
+    font-weight: bold;
+  }
+
+  .pedido__success[hidden] {
+    display: none;
   }
 
   /* ---------- Contact ---------- */
