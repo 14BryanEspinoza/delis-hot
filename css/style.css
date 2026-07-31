@@ -916,7 +916,7 @@
     width: clamp(600px, 100%, 700px);
   }
 
-  .menu-card {
+  .menu__card {
     height: 200px;
   }
 
