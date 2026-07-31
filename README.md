@@ -81,7 +81,7 @@ el navegador, igual que en producción.
 │   ├── main.js         # Lógica del carrusel (página principal)
 │   ├── pedidos.js      # Lógica del formulario de pedidos
 │   └── nav.js          # Toggle del navbar (compartido)
-├── assets/             # Imágenes y logo del sitio
+├── assets/             # Imágenes optimizadas (WebP/AVIF), logo y favicon
 ├── eslint.config.js    # Configuración de ESLint (flat config)
 ├── .prettierrc         # Configuración de Prettier
 └── .github/workflows/

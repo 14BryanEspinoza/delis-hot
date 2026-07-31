@@ -30,6 +30,7 @@
     <link rel="canonical" href="https://14bryanespinoza.github.io/delis-hot/" />
     <meta name="theme-color" content="#eeeeee" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="assets/Icono.png" type="image/png" />
     <title>Deli's Hots</title>
     <script type="module" src="js/main.js"></script>
@@ -98,28 +99,52 @@
           <div class="carousel__viewport">
             <div class="carousel__track">
               <div class="carousel__item">
-                <img
-                  src="assets/comida3.png"
-                  class="carousel__image"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <picture>
+                  <source type="image/avif" srcset="assets/img/comida1.avif" />
+                  <source type="image/webp" srcset="assets/img/comida1.webp" />
+                  <img
+                    src="assets/img/comida1.webp"
+                    class="carousel__image"
+                    alt=""
+                    aria-hidden="true"
+                    width="736"
+                    height="736"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div class="carousel__item">
-                <img
-                  src="assets/comida2.png"
-                  class="carousel__image"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <picture>
+                  <source type="image/avif" srcset="assets/img/comida2.avif" />
+                  <source type="image/webp" srcset="assets/img/comida2.webp" />
+                  <img
+                    src="assets/img/comida2.webp"
+                    class="carousel__image"
+                    alt=""
+                    aria-hidden="true"
+                    width="736"
+                    height="920"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div class="carousel__item">
-                <img
-                  src="assets/comida1.png"
-                  class="carousel__image"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <picture>
+                  <source type="image/avif" srcset="assets/img/comida3.avif" />
+                  <source type="image/webp" srcset="assets/img/comida3.webp" />
+                  <img
+                    src="assets/img/comida3.webp"
+                    class="carousel__image"
+                    alt=""
+                    aria-hidden="true"
+                    width="736"
+                    height="981"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -143,11 +168,18 @@
         <div class="menu__grid">
           <div class="menu__card">
             <div class="menu-card__image">
-              <img
-                src="assets/hotdog.png"
-                alt="Hot dog con salchicha jugosa"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/hotdog.avif" />
+                <source type="image/webp" srcset="assets/img/hotdog.webp" />
+                <img
+                  src="assets/img/hotdog.webp"
+                  alt="Hot dog con salchicha jugosa"
+                  width="640"
+                  height="427"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Hot Dog</h3>
@@ -164,11 +196,18 @@
           </div>
           <div class="menu__card">
             <div class="menu-card__image">
-              <img
-                src="assets/hamburgesa.png"
-                alt="Hamburguesa de carne de res"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/hamburgesa.avif" />
+                <source type="image/webp" srcset="assets/img/hamburgesa.webp" />
+                <img
+                  src="assets/img/hamburgesa.webp"
+                  alt="Hamburguesa de carne de res"
+                  width="640"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Hamburguesa</h3>
@@ -185,11 +224,18 @@
           </div>
           <div class="menu__card">
             <div class="menu-card__image">
-              <img
-                src="assets/pizza.png"
-                alt="Pizza con salsa de tomate y queso"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/pizza.avif" />
+                <source type="image/webp" srcset="assets/img/pizza.webp" />
+                <img
+                  src="assets/img/pizza.webp"
+                  alt="Pizza con salsa de tomate y queso"
+                  width="640"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Pizza</h3>
@@ -206,11 +252,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/tacos.png"
-                alt="Tacos con carne y salsa"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/tacos.avif" />
+                <source type="image/webp" srcset="assets/img/tacos.webp" />
+                <img
+                  src="assets/img/tacos.webp"
+                  alt="Tacos con carne y salsa"
+                  width="640"
+                  height="334"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Tacos</h3>
@@ -227,11 +280,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/polloFrito.png"
-                alt="Pollo frito crujiente"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/polloFrito.avif" />
+                <source type="image/webp" srcset="assets/img/polloFrito.webp" />
+                <img
+                  src="assets/img/polloFrito.webp"
+                  alt="Pollo frito crujiente"
+                  width="640"
+                  height="655"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Pollo frito</h3>
@@ -248,11 +308,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/shawarma.png"
-                alt="Shawarma con carne marinada"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/shawarma.avif" />
+                <source type="image/webp" srcset="assets/img/shawarma.webp" />
+                <img
+                  src="assets/img/shawarma.webp"
+                  alt="Shawarma con carne marinada"
+                  width="640"
+                  height="459"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Shawarma</h3>
@@ -269,11 +336,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/sandwich.png"
-                alt="Sándwich con pan fresco y vegetales"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/sandwich.avif" />
+                <source type="image/webp" srcset="assets/img/sandwich.webp" />
+                <img
+                  src="assets/img/sandwich.webp"
+                  alt="Sándwich con pan fresco y vegetales"
+                  width="640"
+                  height="428"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Sandwich</h3>
@@ -290,11 +364,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/empanadas.png"
-                alt="Empanadas recién horneadas"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/empanadas.avif" />
+                <source type="image/webp" srcset="assets/img/empanadas.webp" />
+                <img
+                  src="assets/img/empanadas.webp"
+                  alt="Empanadas recién horneadas"
+                  width="360"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Empanadas</h3>
@@ -311,11 +392,18 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/noodles.webp"
-                alt="Noodles salteados con verduras"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/img/noodles.avif" />
+                <source type="image/webp" srcset="assets/img/noodles.webp" />
+                <img
+                  src="assets/img/noodles.webp"
+                  alt="Noodles salteados con verduras"
+                  width="640"
+                  height="640"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Noodles</h3>
@@ -332,11 +420,24 @@
           </div>
           <div class="menu__card menu-card--hidden">
             <div class="menu-card__image">
-              <img
-                src="assets/fishAndChips.png"
-                alt="Fish and chips con papas doradas"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="assets/img/fishAndChips.avif"
+                />
+                <source
+                  type="image/webp"
+                  srcset="assets/img/fishAndChips.webp"
+                />
+                <img
+                  src="assets/img/fishAndChips.webp"
+                  alt="Fish and chips con papas doradas"
+                  width="266"
+                  height="189"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </div>
             <div class="menu-card__body">
               <h3 class="menu-card__title">Fish and Chips</h3>
