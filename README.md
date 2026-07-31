@@ -12,8 +12,8 @@ para aprender HTML, CSS y JavaScript.
   (`aria-expanded`, cierre con `Escape`).
 - Carrusel con autoplay, indicadores y respeto por
   `prefers-reduced-motion`.
-- Menú con tarjeta por producto y expansión "Ver más" sin
-  JavaScript.
+- Menú con tarjeta por producto en grid responsive, imágenes
+  optimizadas y CTA a pedidos.
 - Formulario de pedidos con validación nativa del navegador y
   confirmación accesible (`aria-live`).
 - Iconos SVG inline, sin fuentes externas ni CDNs.
@@ -78,7 +78,8 @@ el navegador, igual que en producción.
 ├── css/
 │   └── style.css       # Estilos: tokens, @layer, responsive
 ├── js/
-│   ├── main.js         # Lógica del carrusel (página principal)
+│   ├── main.js         # Entry point (navbar + carrusel)
+│   ├── carousel.js     # Lógica del carrusel (página principal)
 │   ├── pedidos.js      # Lógica del formulario de pedidos
 │   └── nav.js          # Toggle del navbar (compartido)
 ├── assets/             # Imágenes optimizadas (WebP/AVIF), logo y favicon
