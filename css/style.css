@@ -919,4 +919,20 @@
     white-space: nowrap;
     border: 0;
   }
+
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: var(--space-4);
+    z-index: calc(var(--z-header) + 1);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-dark);
+    color: var(--color-surface);
+    font-weight: bold;
+
+    &:focus {
+      top: var(--space-2);
+    }
+  }
 }

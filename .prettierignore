@@ -4,6 +4,7 @@ node_modules/
 dist/
 *.map
 *.lock
+pnpm-lock.yaml
 *.svg
 *.png
 *.jpg
