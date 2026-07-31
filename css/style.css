@@ -252,6 +252,28 @@
     border-radius: var(--radius-lg);
   }
 
+  .carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-block-start: var(--space-2);
+  }
+
+  .carousel__dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 9999px;
+    background-color: var(--color-border);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+  }
+
+  .carousel__dot.is-active {
+    background-color: var(--color-dark);
+  }
+
   /* ---------- Menu ---------- */
   .menu {
     padding-block: var(--space-12);
