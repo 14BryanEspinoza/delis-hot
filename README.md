@@ -1,91 +1,100 @@
-# 🍔 Deli`s Hots
+# Deli's Hots
 
-**Deli`s Hots** es una página web desarrollada para una tienda de comida rápida, con un diseño atractivo y moderno. Muestra un menú de productos como hamburguesas, pizzas, hot dogs, tacos, shawarmas y más. La navegación es intuitiva, con integración de Bootstrap y un toque personalizado con CSS.
+Deli's Hots es un sitio web de comida rápida que muestra el menú,
+destaca los productos en un carrusel y permite hacer pedidos en
+línea. Construido con tecnologías web estándar, sin frameworks, es
+a la vez una vitrina moderna para un restaurante y una base sólida
+para aprender HTML, CSS y JavaScript.
 
----
+## Características
 
-## 📌 Descripción
+- Navbar responsive con menú desplegable en móvil, accesible
+  (`aria-expanded`, cierre con `Escape`).
+- Carrusel con autoplay, indicadores y respeto por
+  `prefers-reduced-motion`.
+- Menú con tarjeta por producto y expansión "Ver más" sin
+  JavaScript.
+- Formulario de pedidos con validación nativa del navegador y
+  confirmación accesible (`aria-live`).
+- Iconos SVG inline, sin fuentes externas ni CDNs.
+- Diseño responsive mobile-first con tokens en CSS custom
+  properties.
+- SEO básico: metadatos, Open Graph y Twitter Cards.
 
-El sitio permite a los usuarios visualizar el menú completo de la tienda y hacer pedidos fácilmente. Se ha implementado un diseño _responsive_ para una buena experiencia en cualquier dispositivo (desktop, tablet, móvil), además de incluir un carrusel con imágenes atractivas de los productos.
+## Stack
 
-El proyecto también refuerza el aprendizaje en el uso de Bootstrap para componentes y responsive grid.
+| Capa            | Tecnología                         |
+| --------------- | ---------------------------------- |
+| HTML            | HTML5 semántico                    |
+| CSS             | CSS3 vanilla con custom properties |
+| JavaScript      | ES6+ módulos nativos (sin bundler) |
+| Package manager | pnpm                               |
+| Linting         | ESLint + Prettier                  |
+| Deploy          | GitHub Pages                       |
 
----
+## Empezar
 
-## 🧩 Tecnologías utilizadas
+### Requisitos
 
-- HTML5 (estructura semántica)
-- CSS3 (personalización y estilos propios)
-- Bootstrap 5.0.2 (para estructura y componentes)
-- Bootstrap Icons
-- Responsive Design (Mobile First)
-- SEO básico (metadatos, OG tags)
-- Carousel de imágenes
+- Node.js 18 o superior
+- pnpm 8 o superior
 
----
-
-## 🧭 Estructura del sitio
-
-- **Navbar**: menú de navegación con enlaces a las secciones de la página.
-- **Inicio**: carrusel con imágenes de comida y bienvenida.
-- **Menú**: galería de productos con imágenes, descripciones y precios.
-- **Pedidos**: página de pedidos _(en html/pedidos.html)_.
-- **Footer**: información de contacto y redes sociales.
-
----
-
-## 📂 Estructura del proyecto
+### Instalación
 
 ```bash
-.
-├── index.html
-├── html/
-│   └── pedidos.html
-├── css/
-│   └── style.css
-├── assets/
-│   ├── Icono.png
-│   ├── comida1.png
-│   ├── comida2.png
-│   ├── comida3.png
-│   ├── hotdog.png
-│   ├── hamburgesa.png
-│   ├── pizza.png
-│   ├── tacos.png
-│   ├── polloFrito.png
-│   ├── shawarma.png
-│   ├── sandwich.png
-│   ├── empanadas.png
-│   ├── noodles.webp
-│   └── fishAndChips.png
+git clone git@github.com:14BryanEspinoza/delis-hot.git
+cd delis-hot
+pnpm install
 ```
 
----
+### Desarrollo
 
-## 🛠️ En desarrollo
+Sirve el sitio en <http://localhost:3000>:
 
-- [ ] Mejora en la funcionalidad del formulario de pedidos
-- [ ] Implementación de carrito de compras (con JavaScript o framework)
-- [ ] Página de detalles de cada producto
-- [ ] Optimización SEO
-- [ ] Despliegue en hosting propio o GitHub Pages
+```bash
+pnpm dev
+```
 
----
+No hay paso de build: los módulos ES se ejecutan directamente en
+el navegador, igual que en producción.
 
-## 🧑‍💻 Autor
+### Scripts
 
-**Bryan14Saenz**
+| Script              | Descripción                             |
+| ------------------- | --------------------------------------- |
+| `pnpm dev`          | Sirve el sitio localmente (puerto 3000) |
+| `pnpm lint`         | Ejecuta ESLint sobre el código          |
+| `pnpm lint:fix`     | Corrige automáticamente los errores     |
+| `pnpm format`       | Formatea el código con Prettier         |
+| `pnpm format:check` | Verifica el formato sin modificar       |
 
-> “Programa no para resolver problemas, sino para crear soluciones.”
+## Estructura del proyecto
 
-📧 Correo: [14bryansaenz@gmail.com](mailto:14bryansaenz@gmail.com)  
-🌐 GitHub: [github.com/Bryan14Saenz](https://github.com/Bryan14Saenz)  
-🔗 LinkedIn: [linkedin.com/in/14bryansaenz](https://www.linkedin.com/in/14bryansaenz)  
-📘 Facebook: [facebook.com/14BryanSaenz](https://www.facebook.com/14BryanSaenz)  
-🐦 Twitter: [twitter.com/14BryanSaenz](https://twitter.com/14BryanSaenz)
+```text
+.
+├── index.html          # Página principal (nav, carrusel, menú, footer)
+├── html/
+│   └── pedidos.html    # Página de pedidos (formulario + validación)
+├── css/
+│   └── style.css       # Estilos: tokens, @layer, responsive
+├── js/
+│   ├── main.js         # Lógica del carrusel (página principal)
+│   ├── pedidos.js      # Lógica del formulario de pedidos
+│   └── nav.js          # Toggle del navbar (compartido)
+├── assets/             # Imágenes y logo del sitio
+├── eslint.config.js    # Configuración de ESLint (flat config)
+├── .prettierrc         # Configuración de Prettier
+└── .github/workflows/
+    └── deploy.yml      # Despliegue automático a GitHub Pages
+```
 
----
+## Demo
 
-## 🌍 Demo en línea
+- GitHub Pages: disponible tras el primer despliegue de la rama
+  `main`.
 
-🟢 [delishots.netlify.app](https://delishots.netlify.app)
+## Autor
+
+Bryan Espinoza
+
+"Programo no para resolver problemas, sino para crear soluciones."
