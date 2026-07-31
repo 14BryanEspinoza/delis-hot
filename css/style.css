@@ -12,7 +12,7 @@
   --color-surface-alt: #f4f4f5;
   --color-text: #18181b;
   --color-text-muted: #52525b;
-  --color-text-secondary: #71717a;
+  --color-text-secondary: #6b6b74;
   --color-border: #e4e4e7;
   --color-accent: #ff6b35;
   --color-accent-hover: #f0561f;
@@ -445,17 +445,28 @@
     width: clamp(280px, 100% - 2rem, 560px);
     margin-inline: auto;
     margin-block-start: var(--space-8);
+    cursor: grab;
+  }
+
+  .carousel.is-dragging {
+    cursor: grabbing;
   }
 
   .carousel__viewport {
     overflow: hidden;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
+    touch-action: pan-y;
   }
 
   .carousel__track {
     display: flex;
+    user-select: none;
     transition: transform 0.6s ease;
+  }
+
+  .carousel.is-dragging .carousel__track {
+    transition: none;
   }
 
   .carousel__item {
@@ -481,7 +492,7 @@
     padding: 0;
     border: 0;
     border-radius: var(--radius-full);
-    background-color: var(--color-border);
+    background-color: var(--color-text-secondary);
     cursor: pointer;
     transition:
       background-color var(--transition-fast),
@@ -690,7 +701,6 @@
       box-shadow var(--transition-fast);
 
     &:focus {
-      outline: none;
       border-color: var(--color-focus);
       box-shadow: 0 0 0 3px var(--color-accent-soft);
     }
