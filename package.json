@@ -12,7 +12,7 @@
     "format:check": "prettier --check ."
   },
   "keywords": [],
-  "author": "Bryan14Saenz",
+  "author": "14BryanEspinoza",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.30.1",

@@ -93,7 +93,6 @@ el navegador, igual que en producción.
 │   └── nav.js          # Toggle del navbar (compartido)
 ├── assets/
 │   ├── img/            # Imágenes optimizadas en WebP y AVIF
-│   ├── favicon.svg     # Favicon en SVG
 │   └── Icono.png       # Logo del sitio
 ├── eslint.config.js    # Configuración de ESLint (flat config)
 ├── .prettierrc         # Configuración de Prettier
@@ -117,4 +116,4 @@ El sitio se despliega automáticamente en GitHub Pages al hacer
 
 Bryan Espinoza
 
-"Programo no para resolver problemas, sino para crear soluciones."
+"Programa no para resolver problemas, sino para crear soluciones."
